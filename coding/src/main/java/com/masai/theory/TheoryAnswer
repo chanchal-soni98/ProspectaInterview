@@ -1,0 +1,15 @@
+1. How will you tackle the challenge above?
+Answer : First I tried to read csv file for that i add open CSV dependency.
+If the cell value is a value, leave it. And if it is folmula then calculate the formula.
+
+2. What type of errors you would you check for?
+
+Ans : Possible errors to check: 
+	1. Invalid Formula(formula should be correct.
+	2. Dependencies in formula, if variables are depending on each other A1 refer B1 and B1 is A1 Then user can break your code.
+	3. Input should be correct. Invalid data can break your code.
+	4. CSV file should be correct means data present in csv should be in correct format.
+
+3. How might a user break your code?
+
+Ans : If Input is not correct and Circular dependencies are there in formula then user can break the code. Too large CSV file provided by user can break your code.

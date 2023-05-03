@@ -1,0 +1,22 @@
+1.Input validation : Use proper input and valid them.
+
+2. Annotation : First of all add appropriated annotation and import package accordingly because 
+there are multiple package, If you are importing wrong package then you will be not able to get output.
+
+3. Security : Api should be secure. Authentication and Authorization is very important part of your api, 
+please ensure only authorized user can access your data.
+This can be achieved through Spring Security.
+
+4. Testing : Api should be tested to ensure the expected output. There are multiple kind of testing
+like unit testing, integration testing and etc.
+
+5.Exception Handling and Error handling : Api should have proper exception and error handling. 
+
+6. Documentation : Documentation is very important so other can understand what you did and why.
+
+
+
+
+
+
+
