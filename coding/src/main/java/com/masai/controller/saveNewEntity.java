@@ -22,6 +22,8 @@ public class saveNewEntity {
 	    HttpHeaders hh = new HttpHeaders();
 	    
 	    hh.add("Content-Type","application/json");  // json data
+	    
+	    
 	    hh.setAccept((List<MediaType>) MediaType.APPLICATION_JSON);
 	    
 	    HttpEntity<Map<String, Object>> newEntity = new HttpEntity<>(entry, hh);

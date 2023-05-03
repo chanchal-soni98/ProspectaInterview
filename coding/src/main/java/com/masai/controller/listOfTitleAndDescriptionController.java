@@ -33,7 +33,7 @@ public class listOfTitleAndDescriptionController {
 	    
 	    String url = "https://api.publicapis.org/entries?category=" + cat;//url for category,  
 	    
-	    Map<String, Object> data = restTemplate.getForObject(url, Map.class);//url Mapping
+	    Map<String, Object> data = restTemplate.getForObject("https://api.publicapis.org/entries?category=" + cat, Map.class);//url Mapping
 	    
 	    List<Map<String, String>> listofTilteAndDescription = new ArrayList<Map<String, String>>();
 	    
@@ -42,7 +42,7 @@ public class listOfTitleAndDescriptionController {
 	    for (Map<String, String> map : lists) {  //GET /entries
 	      Map<String, String> m = new HashMap<>(); // create map using HashMap Class. 
 	      m.put("Title", map.get("API"));  // put title in map
-	      m.put("Description", map.get("Description"));// put title in map
+	      m.put("Description", map.get("Description"));// put Description in map
 	      listofTilteAndDescription.add(m);
 	    }
 	    
