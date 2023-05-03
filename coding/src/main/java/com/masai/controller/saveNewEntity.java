@@ -1,5 +1,6 @@
 package com.masai.controller;
-
+//Create an API that would save a new entry with all the relevant properties 
+//which retrieves values from the endpoint GET /entries.
 import java.util.List;
 import java.util.Map;
 
